@@ -12,4 +12,10 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require backstretch
+//= require jquery-migrate-1.2.1.min
+//= require jquery.fittext
+//= require jquery.flexslider
+//= require modernizr
+//= require waypoints
 //= require_tree .
