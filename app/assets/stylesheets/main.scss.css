@@ -1,15 +1,15 @@
 /* =================================================================== */
-/* 
+/*
 /*  Puremedia v1.0 Main Stylesheet
 /*  url:styleshout.com
 /*  10-10-2014
 /*
-/*  ------------------------------------------------------------------ 
+/*  ------------------------------------------------------------------
 
-    TOC: 
+    TOC:
     a. Webfonts and Iconfonts
     b. Document Setup
-    c. Forms  
+    c. Forms
     d. Preloader
     e. Buttons
     f. Other Components
@@ -28,14 +28,14 @@
 
 /* =================================================================== */
 
-/* 
+/*
 /* a. Webfonts and Iconfonts
 /* =================================================================== */
 @import url("fonts.css");
-@import url("font-awesome/css/font-awesome.min.css");
+@import url("font-awesome.css");
 @import url("simple-line-icons/simple-line-icons.css");
 
-/* 
+/*
 /* b. Document Setup
 /* =================================================================== */
 
@@ -816,28 +816,31 @@ header .logo {
 	z-index: 992;
 }
 header .logo a {
+  font-family: 'raleway-heavy';
+  letter-spacing: 3px;
 	display: block;
 	margin: 0 20px 0 0;
 	padding: 0;
 	border: none;
 	outline: none;
-	font: 0/0 a;
+	/* font: 0/0 a; */
 	text-shadow: none;
-	color: transparent;
+	color: #fff;
 	width: 126px;
-	height: 12px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	background-image: url("../images/logo.png");
+	/* background-image: url("logo.png"); */
 }
-@media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
+
+/* @media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
 	header .logo a {
-		background-image: url("../images/logo-@2x.png");
+		background-image: url("logo-@2x.png");
 		-webkit-background-size: 126px 12px;
 		-moz-background-size: 126px 12px;
 		background-size: 126px 12px;
 	}
-}
+} */
+
 .opaque {
 	background: #12151b;
 }
@@ -1158,7 +1161,7 @@ hr {
 /* page title
 ---------------------------------------------------------------------- */
 #page-title {
-	background: #12151b url(../images/hero-bg.jpg) no-repeat center center fixed;
+	background: #12151b url(hero-bg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover !important;
 	-moz-background-size: cover !important;
 	background-size: cover !important;
@@ -1278,7 +1281,7 @@ hr {
 /* k. Hero Section
 /* =================================================================== */
 #hero {
-	background: #12151b url(../images/hero-bg.jpg) no-repeat center center fixed;
+	background: #12151b url(hero-bg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover !important;
 	-moz-background-size: cover !important;
 	background-size: cover !important;
